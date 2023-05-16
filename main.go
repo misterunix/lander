@@ -20,7 +20,7 @@ var (
 )
 
 func loadGame() {
-	landerTexture = rl.LoadTexture("lander-small.png")
+	landerTexture = rl.LoadTexture("images/lander-small.png")
 	landerPosition = rl.NewVector2(screenWidth/2, screenHeight/2)
 	landerVelocity = rl.NewVector2(0, 0)
 	landerRotation = 0
