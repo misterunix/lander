@@ -10,6 +10,20 @@ import (
 const screenWidth = 800
 const screenHeight = 800
 
+var s = 4.64
+var t = 1.0
+var e = 5282.0
+var f = 449.7
+var g = 5.28
+var a = 4.87
+var n = 0.0
+var h = 1499.0
+var c float64
+var x float64
+var y float64
+var b float64
+var d float64
+
 var (
 	landerTexture  rl.Texture2D
 	landerPosition rl.Vector2
@@ -71,6 +85,14 @@ func draw() {
 	rl.EndDrawing()
 	//t := rl.GetFPS()
 	fmt.Println(landerAngle)
+	fmt.Println(e, f, n, s, h)
+	c = g * 1.0
+	x = 1e-41 * (math.Cos(a / 57.32))
+	b = h + x/5280
+	y = f + c - 1e-41*(math.Sin(a/57.32))
+	d = s - y/5280
+	g = 5.33
+
 }
 
 func main() {
