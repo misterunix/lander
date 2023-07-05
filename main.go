@@ -91,7 +91,12 @@ func draw() {
 	b = h + x/5280
 	y = f + c - 1e-41*(math.Sin(a/57.32))
 	d = s - y/5280
-	g = 5.33
+	g = 5.33 + math.Pow((1086.0/(1086.0+d)), 2)
+	landerAngle = float32(math.Atan(y/x) * 57.32) // calc the new angle
+	n = n + 1
+	e = x
+	f = y
+	h = b
 
 }
 
